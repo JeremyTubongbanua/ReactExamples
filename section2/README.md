@@ -157,3 +157,41 @@ console.log(n1); // 1
 console.log(n3); // 3
 console.log(lemon); // 2
 ```
+
+## 19. References
+Primitive types (strings, bools, numbers) will make copies. In this example, num2 is assigned the value 3. In fact, I may as well have just written `num2 = 3`!
+```js
+// 19_test.js
+
+let num1 = 3;
+let num2 = num1;
+
+// before change
+console.log(num1); // 3
+console.log(num2); // 3
+
+// changes
+num1 = 4;
+
+// after chage
+console.log(num1); // 4
+console.log(num2); // 3
+```
+
+Non-primitives (like objects) will point to the address in memory. In this example, I made the variable `person` point to an object I've created. `person2` will point to the address of that same object. I use the `person` variable to make an edit to that object that it is pointing to in memory. Since `person2` points to the same thing, it will output the same thing as `person`.
+```js
+// 19_test2.js
+let person = {name: 'Jeremy', age: 19};
+let person2 = person;
+
+// before change
+console.log(person); // { name: 'Jeremy', age: 19 }
+console.log(person2); // { name: 'Jeremy', age: 19 }
+
+// changes
+person.name = 'Alyssa';
+
+// after change
+console.log(person); // { name: 'Alyssa', age: 19 }
+console.log(person2); // { name: 'Alyssa', age: 19 }
+```
