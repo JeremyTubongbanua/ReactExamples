@@ -7,7 +7,7 @@ function App() {
       id: 'e1',
       title: 'Toilet Paper',
       amount: 94.12,
-      date: new Date(2020, 7, 14),
+      date: new Date(2020, 1, 14),
     },
     { id: 'e2', title: 'New TV', amount: 799.49, date: new Date(2021, 2, 12) },
     {
@@ -25,7 +25,8 @@ function App() {
   ]);
 
   const addExpenseHandler = (expense) => {
-    setExpenses((prevExpenses) => { const newVal = [...prevExpenses, expense]; setExpenses(newVal); console.log(newVal); });
+    setExpenses((expenses) => { return [...expenses, expense] });
+    console.log(expenses);
   }
   return (
     <div className="app">
