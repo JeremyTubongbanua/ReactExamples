@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Grids</title>
+		<style>
+			.grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				column-gap: 20px;
+				row-gap: 20px;
+				/* fr = take up remaining space */
+			}
+			.div1,
+			.div2,
+			.div3 {
+				height: 200px;
+			}
+			.div1,
+			.div3 {
+				background-color: lightgreen;
+			}
+
+			.div2 {
+				background-color: lightgoldenrodyellow;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="grid">
+			<div class="div1">
+				1fr
+				<p>test</p>
+				<p>test</p>
+				<br />
+			</div>
+			<div class="div2">1fr</div>
+			<div class="div3">1fr</div>
+			<div class="div1">
+				1fr
+				<p>test</p>
+			</div>
+			<div class="div2">1fr</div>
+			<div class="div3">1fr</div>
+		</div>
+	</body>
+</html>

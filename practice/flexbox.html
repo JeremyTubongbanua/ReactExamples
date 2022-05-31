@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flexbox Practice</title>
+		<style>
+			.wrapper {
+				display: flex;
+				flex-direction: row;
+				background-color: lightgray;
+			}
+			.div1,
+			.div3 {
+				background-color: lightpink;
+			}
+			.div1 {
+				width: 100px;
+			}
+			.div2 {
+				background-color: lightblue;
+				flex: 1;
+			}
+
+			.div3 {
+				flex: 2;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="div1">100px</div>
+			<div class="div2">flex: 1</div>
+			<div class="div3">flex: 2</div>
+		</div>
+	</body>
+</html>
