@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/JeremyTubongbanua/ReactExamples/issues"
   },
-  "homepage": "https://github.com/JeremyTubongbanua/ReactExamples#readme"
+  "homepage": "https://github.com/JeremyTubongbanua/ReactExamples#readme",
+  "dependencies": {
+    "create-react-app": "^5.0.1"
+  }
 }
