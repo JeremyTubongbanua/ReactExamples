@@ -1,0 +1,33 @@
+.meals_list_container {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 2rem;
+	background-color: rgb(251, 153, 136);
+}
+
+@media (max-width: 1480px) {
+	.meals_list_container {
+		padding-top: 100px;
+	}
+}
+
+@media (max-width: 1320px) {
+	.meals_list_container {
+		padding-top: 200px;
+	}
+}
+
+@media (max-width: 950px) {
+	.meals_list_container {
+		padding-top: 300px;
+	}
+}
+
+@media (max-width: 500px) {
+	.meals_list_container {
+		padding-top: 400px;
+	}
+}

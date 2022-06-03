@@ -1,0 +1,40 @@
+.cart-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 30px;
+	background-color: rgb(216, 83, 60);
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+.cart-button:hover {
+	animation: buttonHover 0.25s ease-out forwards;
+}
+
+@keyframes buttonHover {
+	0% {
+		transform: translateY(0%);
+	}
+
+	50% {
+		transform: translateY(-5%);
+	}
+
+	100% {
+		transform: translateY(0%);
+		background-color: rgb(182, 29, 2);
+	}
+}
+
+.cart-button img {
+	width: 40px;
+	height: 40px;
+}
+
+.cart-button p {
+	font-family: Roboto, Arial;
+	font-size: 18px;
+}

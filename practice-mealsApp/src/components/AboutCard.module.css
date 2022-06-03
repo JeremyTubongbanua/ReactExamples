@@ -1,0 +1,38 @@
+.about_card_container {
+	position: absolute;
+	background-color: rgb(121, 100, 100);
+	z-index: 1;
+	margin: 0px;
+	transform: translateY(250px);
+	border-radius: 24px;
+	width: 75%;
+	height: 18rem;
+	animation: entry 2.5s;
+}
+
+.about_card_container h1 {
+	text-align: center;
+	color: white;
+	font-family: Roboto, Arial;
+	font-size: 4em;
+	line-height: 0;
+	padding-top: 1rem;
+	animation: entry 6s;
+}
+
+@keyframes entry {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.about_card_container p {
+	color: white;
+	font-family: Roboto, Arial;
+	font-size: 2rem;
+	padding: 0px 1rem;
+	animation: entry 6s;
+}
