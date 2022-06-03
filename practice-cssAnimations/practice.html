@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.container {
+				width: 500px;
+				height: 500px;
+				background-color: darkblue;
+			}
+			.square {
+				width: 50%;
+				height: 50%;
+				background-color: red;
+				animation: left-to-right 1s linear forwards infinite;
+			}
+			.container:hover .square {
+				animation-play-state: paused;
+			}
+
+			@keyframes left-to-right {
+				0% {
+					transform: translateX(0%);
+				}
+				25% {
+					transform: translateY(100%);
+				}
+				50% {
+					transform: translateX(100%) translateY(100%);
+				}
+				75% {
+					transform: translateX(100%);
+				}
+
+				100% {
+					transform: translateX(0%);
+					background-color: green;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="square"></div>
+		</div>
+	</body>
+</html>
