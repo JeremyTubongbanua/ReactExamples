@@ -1,25 +1,10 @@
 
 
-import React, { useState } from 'react';
-
+import React from 'react';
 import classes from './MealItem.module.css';
 
-const MealItem = ({ meal }) => {
-
-    const [amount, setAmount] = useState(0);
-
-    const onPlusHandler = () => {
-        setAmount((oldAmount) => oldAmount + 1);
-
-    }
-
-    const onSubtractHandler = () => {
-        if (amount <= 0) {
-            return;
-        }
-        setAmount((oldAmount) => oldAmount - 1);
-    }
-
+const MealItem = ({ meal, onIncrease, onDecrease }) => {
+    const amount = meal.amount;
     return (
         <div className={classes.meal_item_container}>
             <span>
@@ -32,9 +17,9 @@ const MealItem = ({ meal }) => {
             </span>
             <span>
                 <p className={classes.meal_item_description}>{meal.description}</p>
-                <span style={{}}>
-                    <button onClick={onSubtractHandler} className={classes.amount_button}>-</button>
-                    <button onClick={onPlusHandler} className={classes.amount_button}>+</button>
+                <span>
+                    <button onClick={() => { onDecrease(meal.id) }} className={classes.amount_button}>-</button>
+                    <button onClick={() => { onIncrease(meal.id) }} className={classes.amount_button}>+</button>
                 </span>
             </span>
         </div >
