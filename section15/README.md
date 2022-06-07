@@ -7,7 +7,7 @@
 ## 189. Using Custom Hooks
 
 -   Made `use-counter.js` which uses `useState` and `useEffect` inside the hook.
--   Using `useCounter()` (our custom hook) inside of a functional component will make the hooks, `useState` and `useEffect`, binded to the functional component that uses `useCounter()`.
+-   Using `useCounter()` (our custom hook) inside of a functional component will make the hooks, `useState` and `useEffect`, binded to the functional component that uses `useCounter()`..
 
 ForwardCounter.js (functional component):
 
